@@ -1,0 +1,17 @@
+table{
+    border-spacing: 0px;
+    background-color: burlywood;
+}
+td{
+    border: 1px black solid;
+    padding: 5px 15px;
+    font-style: oblique;
+    border-radius: 15%;
+}
+#button-1{
+    margin: 20px 0 0 0;
+    background-color: pink;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
+    padding: 5px 10px;
+}

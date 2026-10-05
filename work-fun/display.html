@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: 0;
+        
+    }
+    .width-fix p{
+        width: 30%;
+        display: inline-block;
+    }
+    .flex-container{
+        display: flex;
+    }
+    .flex-container p:first-of-type{
+        font-style: italic;
+        color: brown;
+    }
+    .flex-container p:nth-of-type(2){
+        color: chocolate;
+    }
+    .flex-container h5:nth-of-type(2){
+        color: chocolate;
+    }
+    .flex-container p:last-of-type{
+        font-style: italic;
+        color: rgb(5, 84, 243);
+    }
+    nav{
+        position: sticky;
+        top: 0;
+        background-color: aqua;
+        padding: 5px 5px;
+    }
+    .fl-rigth{
+        float: right;
+    }
+    button{
+        position: fixed;
+        right: 10px;
+        bottom: 15px;
+        background-color: brown;
+        color: white;
+        z-index: 2;
+    }
+    button:hover{
+         background-color: white;
+          color: red;
+          transition: 0.5s;
+          cursor: pointer;
+    }
+    footer{
+        width: 100%;
+        background-color: black;
+        color: white;
+        /* position: sticky; */
+        bottom: 0;
+        left: 0;
+        padding: 0 90px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <span id="up_page"></span>
+    <a href="#up_page"><button>наверх</button></a>
+    <nav>
+        <a href="/">На главную</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
+        <a href="https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax">Ссылка</a>
+        <a class="fl-rigth" href="#f">В подвал</a> <!-- Якорь -->
+    </nav>  
+    <h1>Свойство display</h1>
+    <section class="width-fix">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nostrum laudantium aspernatur voluptatem nobis repellendus voluptates sequi dolor omnis neque ipsum, amet magni excepturi, culpa ipsa hic, enim qui facere?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nostrum laudantium aspernatur voluptatem nobis repellendus voluptates sequi dolor omnis neque ipsum, amet magni excepturi, culpa ipsa hic, enim qui facere?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nostrum laudantium aspernatur voluptatem nobis repellendus voluptates sequi dolor omnis neque ipsum, amet magni excepturi, culpa ipsa hic, enim qui facere?</p>
+    </section>
+    <hr>
+    <section class="flex-container">
+        <h5>Lorem ipsum dolor sit amet.</h5>
+        <h5>Lorem ipsum dolor sit amet.</h5>
+        <h5>Lorem ipsum dolor sit amet.</h5>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt veritatis mollitia repellendus ea quia ut porro recusandae, atque rem, non neque voluptatum tempora sequi nisi minima quasi nulla dignissimos. Velit!</p>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt veritatis mollitia repellendus ea quia ut porro recusandae, atque rem, non neque voluptatum tempora sequi nisi minima quasi nulla dignissimos. Velit!</p>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt veritatis mollitia repellendus ea quia ut porro recusandae, atque rem, non neque voluptatum tempora sequi nisi minima quasi nulla dignissimos. Velit!</p>
+    </section>
+    <footer><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est non ipsam fugiat error consequatur ab. Eum nisi culpa error voluptates repellat facere, minima labore non quam saepe ut sapiente.</p></footer>
+</body>
+</html>

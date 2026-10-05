@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS - Полная теория</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        
+        h1 {
+            background: linear-gradient(45deg, #ff6b6b, #ffd700);
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 2rem;
+        }
+        
+        h2 {
+            color: #ff6b6b;
+            border-left: 5px solid #ff6b6b;
+            padding-left: 15px;
+            margin: 40px 0 20px;
+        }
+        
+        h3 {
+            color: #ffd700;
+            margin: 25px 0 15px;
+        }
+        
+        p {
+            background: #16213e;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #2d3436;
+            color: #74b9ff;
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 1rem;
+            margin: 3px;
+        }
+        
+        .demo-box {
+            background: #0f3460;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #ffd700;
+        }
+        
+        .note {
+            background: #2d3436;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #ffd700;
+            margin: 15px 0;
+            font-style: italic;
+            color: #eee;
+        }
+        
+        ul,
+        ol {
+            background: #16213e;
+            padding: 20px 40px;
+            border-radius: 8px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        a {
+            color: #74b9ff;
+        }
+        
+        a:hover {
+            color: #ff6b6b;
+        }
+        
+        .link-box {
+            background: #16213e;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .img-demo {
+            background: #0f3460;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ff6b6b, transparent);
+            margin: 40px 0;
+        }
+        
+        footer {
+            background: #0d0618;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #74b9ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <h1>HTML + CSS - Теория для начинающих</h1>
+
+        <!-- 1. Что такое HTML -->
+        <h2>Что такое HTML?</h2>
+        <p>
+            <strong>HTML (HyperText Markup Language)</strong> — это язык <strong>разметки текста</strong> и <strong>гипертект</strong>. С помощью HTML создаётся структура веб-страницы.
+        </p>
+
+        <div class="divider"></div>
+
+        <!-- 2. Заголовки -->
+        <h2>Заголовки</h2>
+        <p>
+            <span class="tag">&lt;h1&gt;&lt;/h1&gt;</span> — заголовок самый главный. Существует 6 уровней: от h1 до h6.
+        </p>
+
+        <div class="demo-box">
+            <h1>h1 - Главный заголовок</h1>
+            <h2>h2 - Второстепенный</h2>
+            <h3>h3 - Третий уровень</h3>
+        </div>
+
+        <div class="note">
+            Подсказка: набрав <span class="tag">!</span> в пустом html-файле, редактор сам напишет базовый код страницы.
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- 3. Параграфы -->
+        <h2>Параграфы</h2>
+        <p>
+            <span class="tag">&lt;p&gt;&lt;/p&gt;</span> — тег для создания параграфов (абзацев текста).
+        </p>
+
+        <div class="demo-box">
+            <p>Это первый параграф текста.</p>
+            <p>А это второй параграф. Каждый из них отделён отступами.</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- 4. Теги -->
+        <h2>Что такое тег?</h2>
+        <p>
+            Тег — это <span class="tag">&lt;</span> и <span class="tag">&gt;</span>. Например: <span class="tag">&lt;p&gt;</span>.
+        </p>
+        <p>
+            Открывающий тег выглядит как <span class="tag">&lt;p&gt;</span>, а закрывающий — как <span class="tag">&lt;/p&gt;</span> (со слэшем).
+        </p>
+
+        <div class="note">
+            Большинство тегов парные: открывающий + закрывающий.
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- 5. Ссылка на обучение -->
+        <h2>Ссылка на изучение</h2>
+        <div class="link-box">
+            <a href="https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax" target="_blank">
+                Начало работы с HTML - Изучение веб-разработки | MDN
+            </a>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- 6. Строчные и блочные -->
+        <h2>Строчный и блочный элементы</h2>
+        <p>
+            <span class="tag">&lt;span&gt;&lt;/span&gt;</span> — строчный элемент. Не переносит строку, идёт в одну линию.
+        </p>
+
+        <div class="demo-box">
+            Это строчный: <span>СПАН</span> <span>СПАН</span> <span>СПАН</span> — все в одну строку.
+        </div>
+
+        <p>
+            <span class="tag">&lt;div&gt;&lt;/div&gt;</span> — универсальный блочный контейнер. Занимает всю ширину и переносит строку.
+        </p>
+
+        <div class="demo-box">
+            <div>Это блок 1</div>
+            <div>Это блок 2</div>
+            <div>Это блок 3</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- 7. Списки -->
+        <h2>Списки</h2>
+        <p><span class="tag">&lt;li&gt;&lt;/li&gt;</span> — элементы списка.</p>
+        <p><span class="tag">&lt;ol&gt;&lt;/ol&gt;</span> — порядковый (нумерованный) список.</p>
+        <p><span class="tag">&lt;ul&gt;&lt;/ul&gt;</span> — неупорядочный (маркированный) список.</p>
+
+        <h3>Неупорядочный список (ul)</h3>
+        <ul>
+            <li>Пункт первый</li>
+            <li>Пункт второй</li>
+            <li>Пункт третий</li>
+        </ul>
+
+        <h3>Порядковый список (ol)</h3>
+        <ol>
+            <li>Пункт первый</li>
+            <li>Пункт второй</li>
+            <li>Пункт третий</li>
+        </ol>
+
+        <div class="divider"></div>
+
+        <!-- 8. Ссылки и атрибуты -->
+        <h2>Ссылки и атрибуты</h2>
+        <p>
+            <span class="tag">&lt;a href="ссылка"&gt;&lt;/a&gt;</span> — создаёт ссылку.
+        </p>
+
+        <div class="demo-box">
+            <a href="https://developer.mozilla.org/ru/docs/Learn_web_development" target="_blank">
+                Перейти по ссылке (откроется в новой вкладке)
+            </a>
+        </div>
+
+        <div class="note">
+            <strong>Атрибуты всегда находятся в открывающем теге.</strong> Например: <span class="tag">&lt;a href="..."&gt;</span> — атрибут <strong>href</strong> стоит в открывающем теге.
+        </div>
+
+        <p>
+            Символ <span class="tag">#</span> означает, что это <strong>якорь</strong> — ссылка на часть страницы, а не на внешний адрес. Например: <span class="tag">&lt;a href="#top"&gt;</span>.
+        </p>
+
+        <div class="divider"></div>
+
+        <!-- 9. Изображения -->
+        <h2>Изображения</h2>
+        <p>
+            <span class="tag">&lt;img src="..." alt="..."&gt;</span> — вставляет картинку.
+        </p>
+
+        <div class="note">
+            Атрибут <strong>alt</strong> — текст, который показывается, если изображение не загрузилось, и для исключения/доступности (незрячие пользователи).
+        </div>
+
+        <div class="img-demo">
+            <span class="tag">&lt;img src="photo.jpg" alt="описание фото"&gt;</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- 10. Подвал -->
+        <h2>Подвал сайта</h2>
+        <p>
+            <span class="tag">&lt;footer&gt;&lt;/footer&gt;</span> — подвал (нижняя часть) сайта. Обычно содержит копирайт и контакты.
+        </p>
+
+        <div class="demo-box">
+            <footer style="background: transparent; padding: 0; margin: 0; color: #ffd700;">
+                © 2024 Мой сайт. Все права защищены.
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- Настоящий подвал страницы -->
+    <footer>
+        © 2024 HTML + CSS теория | Сделано с любовью
+    </footer>
+
+</body>
+
+</html>

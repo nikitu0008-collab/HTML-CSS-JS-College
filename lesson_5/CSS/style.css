@@ -1,0 +1,64 @@
+a {
+    color: blueviolet;
+    background-color: rgb(107, 108, 109);
+    width: 100%;
+}
+
+#box1 {
+    display: inline-block;
+    border: 5px solid black;
+    color: bisque;
+    width: 50px;
+    height: 65px;
+    background-color: blueviolet;
+}
+
+#box2 {
+    display: inline-block;
+    border: 2px solid purple;
+    color: blue;
+    width: 25px;
+    height: 25px;
+}
+
+#button-1 {
+    color: aqua;
+    border-color: aqua;
+    background-color: deeppink;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 150px;
+    width: 1000px;
+}
+
+
+/* #box1 {
+    color: darksalmon;
+    size: 100px;
+    width: 50px;
+    height: 100px;
+    background-color: rgb(255, 0, 255);
+} */
+
+.Circle-container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-btn {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #eea2c9;
+    color: rgb(249, 0, 228);
+    text-decoration: none;
+    border-radius: 50%;
+    /* это и делает круг */
+    line-height: 80px;
+    /* центрирует текст по вертикали */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 50px;
+}

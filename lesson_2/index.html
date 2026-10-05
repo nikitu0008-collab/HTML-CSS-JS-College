@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма ввода</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+
+    <main>
+        <h1>Форма ввода</h1>
+        <p>Заполните форму — попробуйте разные типы полей.</p>
+
+        <form action="#" method="get">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="ваш@email.ru">
+
+            <label for="text">Текст</label>
+            <input type="text" id="text" placeholder="подсказка">
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" placeholder="пароль">
+
+            <label for="date">Дата</label>
+            <input type="date" id="date">
+
+            <label for="range">Громкость</label>
+            <input type="range" id="range">
+
+            <label for="color">Цвет</label>
+            <input type="color" id="color">
+
+            <p>
+                <input type="radio" name="choice" id="choice1">
+                <label for="choice1">Вариант 1</label>
+
+                <input type="radio" name="choice" id="choice2">
+                <label for="choice2">Вариант 2</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="agree">
+                <label for="agree">Согласен с правилами</label>
+            </p>
+
+            <label for="url">Сайт</label>
+            <input type="url" id="url" placeholder="https://пример.ру">
+
+            <input type="submit" value="Отправить">
+
+        </form>
+    </main>
+
+    <script>
+        (function() {
+            // Сохраняем оригинальные методы
+            const originalLog = console.log;
+            const loggerElement = document.getElementById('log-container'); // Укажите ID вашего контейнера
+
+            // Переопределяем console.log
+            console.log = function() {
+                // Перебираем все аргументы
+                for (let i = 0; i < arguments.length; i++) {
+                    let message = arguments[i];
+                    // Если аргумент — объект, преобразуем в JSON, иначе просто строкуем
+                    if (typeof message === 'object') {
+                        message = JSON.stringify(message);
+                    }
+                    // Добавляем строку в контейнер
+                    loggerElement.innerHTML += message + '<br>';
+                }
+                // И не забываем вызвать оригинальную функцию
+                originalLog.apply(console, arguments);
+            };
+
+            // Аналогично можно переопределить другие методы: console.info(), console.warn(), console.error()
+        })();
+    </script>
+
+</body>
+
+</html>
