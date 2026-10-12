@@ -1,0 +1,38 @@
+body{
+    background-color: cornflowerblue;
+}
+
+#button-1 {
+    background-color: black;
+    color: blueviolet;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#button-1:hover {
+    background-color: darkgray;
+}
+
+#button-2{
+    background-color: black;
+    color: blueviolet;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#button-2:hover{
+    background-color: darkgray;
+}
+
+#button-3{
+    background-color: black;
+    color: blueviolet;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
