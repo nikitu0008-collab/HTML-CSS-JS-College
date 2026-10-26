@@ -13,7 +13,7 @@ form.addEventListener("submit", function(event) {
         return;
     }
 
-    const currentHour = new Date().getHours;
+    const currentHour = new Date().getHours();
 
     let greeting;
 
