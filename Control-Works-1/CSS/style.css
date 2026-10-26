@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(108, 46, 240);
+}
+
+form {
+    position: absolute;
+    background-color: black;
+    color: aliceblue;
+}
+
+input {
+    position: absolute;
+    width: 320px;
+    height: 25px;
+    background-color: black;
+    color: aliceblue;
+}
+
+#namelabel,
+#agelabel {
+    position: absolute;
+}
+
+#name {
+    top: 50px;
+    left: 350px;
+}
+
+#age {
+    top: 90px;
+    left: 350px;
+}
+
+#namelabel {
+    top: 55px;
+    left: 270px;
+}
+
+#agelabel {
+    top: 95px;
+    left: 270px;
+}
+
+#buttons {
+    position: absolute;
+    top: 87px;
+    left: 680px;
+    padding: 8px 16px;
+    background-color: #1e3a5c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#buttons:hover {
+    background-color: #0b6bd9;
+}
