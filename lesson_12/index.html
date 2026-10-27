@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <form id="task-form">
+        <input type="text" id="input-task" placeholder="Текст задачи" autocomplete="off">
+        <input type="datetime-local" id="dead-line">
+        <button type="submit">Добавить</button>
+    </form>
+
+    <h3>Список задач:</h3>
+
+    <table id="tasks-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Задача</th>
+                <th>Когда создано</th>
+                <th>Выполнить до</th>
+                <th>Готово</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <button id="button-delete" type="button">Удалить выполненные</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
